@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+  --bg: #f6f1fa;
+  --card: #ffffff;
+
+  --lav: #d8c7f2;
+  --pink: #f4c6d7;
+
+  --text: #4b3f5c;
+  --muted: #6b5b7b;
+
+  --accent: #9b6fc9;
+  --accent2: #f3a9c9;
+
+  --white: #ffffff;
+  --softTrack: #ecdff6;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: var(--bg);
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resume{
+  width: 900px;
+  margin: 50px auto;
+  display: flex;
+  background: var(--card);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(180, 150, 200, 0.25);
+}
+
+.resume_left{
+  width: 35%;
+  background: linear-gradient(180deg, var(--lav), var(--pink));
+  color: var(--text);
+}
+
+.resume_profile{
+  width: 100%;
+}
+
+.resume_profile img{
+  width: 100%;
+  display: block;
+}
+
+.resume_content{
+  padding: 30px;
+}
+
+.title{
+  margin-bottom: 12px;
+}
+
+.title .bold{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.title .regular{
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.resume_item{
+  margin-bottom: 25px;
+}
+
+.resume_item ul li{
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  column-gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.icon{
+  width: 36px;
+  height: 36px;
+  background: var(--white);
+  color: var(--accent);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+}
+
+.icon i{
+  font-size: 16px;
+  line-height: 1;
+  display: block;
+}
+
+.data{
+  line-height: 1.35;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+.semi-bold{
+  font-weight: 600;
+}
+
+.resume_skills ul li{
+  display: grid;
+  grid-template-columns: 120px 1fr 52px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.skill_name{
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.skill_progress{
+  width: 100%;
+  height: 6px;
+  background: var(--softTrack);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.skill_progress span{
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  display: block;
+  border-radius: 999px;
+}
+
+.skill_per{
+  text-align: right;
+  font-size: 13px;
+}
+
+.resume_right{
+  width: 65%;
+  padding: 40px;
+}
+
+.resume_right .title .bold{
+  color: var(--accent);
+}
+
+.resume_right p{
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.resume_right ul li{
+  margin-bottom: 16px;
+}
+
+.resume_right .date{
+  font-weight: 600;
+  color: #333;
+  min-width: 110px;
+}
+
+.resume_hobby ul{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.resume_hobby ul li{
+  width: 45px;
+  height: 45px;
+  background: var(--pink);
+  color: var(--white);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.resume_hobby ul li i{
+  display: block;
+  line-height: 1;
+}
+
+.resume_right .resume_work ul li,
+.resume_right .resume_education ul li{
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  column-gap: 18px;
+  align-items: start;
+}
+
+.resume_right .resume_work .date,
+.resume_right .resume_education .date{
+  font-weight: 600;
+  color: #333;
+  line-height: 1.25;
+}
+
+.resume_right .resume_work .info,
+.resume_right .resume_education .info{
+  line-height: 1.45;
+}
+
+.resume_right .resume_work .info .semi-bold,
+.resume_right .resume_education .info .semi-bold{
+  display: block;
+  margin-bottom: 4px;
+}
