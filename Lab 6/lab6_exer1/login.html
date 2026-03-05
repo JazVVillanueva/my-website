@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+
+<style>
+body{
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    font-family: Arial, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    text-align:center;
+    width:300px;
+}
+
+h1{
+    color:#333;
+    margin-bottom:20px;
+}
+
+input{
+    width:90%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    background:#6a5acd;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#483d8b;
+}
+
+.reset{
+    background:#aaa;
+}
+
+.reset:hover{
+    background:#777;
+}
+</style>
+
+<script>
+function check(form){
+
+    if(form.userid.value=="myuserid" && form.pswrd.value=="mypswrd"){
+
+        window.open("https://www.google.com","_blank");
+
+    }else{
+
+        alert("Error: Username or Password incorrect");
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>Login</h1>
+
+<form name="login">
+
+<input type="text" name="userid" placeholder="Username">
+
+<input type="password" name="pswrd" placeholder="Password">
+
+<br>
+
+<button type="button" onclick="check(this.form)">Login</button>
+
+<button type="reset" class="reset">Cancel</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -206,7 +206,7 @@ strong {
   animation: spinner .9s linear infinite;
 }
 
-@-webkit-@keyframes spinner {
+@-webkit-keyframes spinner {
   to {transform: rotate(360deg);
   }
 }
@@ -1185,3 +1185,15 @@ strong {
   }
 }
 
+/* --- Homework Animation (one page, professional) --- */
+.fade-up{
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 800ms ease, transform 800ms ease;
+  will-change: opacity, transform;
+}
+
+.fade-up.show{
+  opacity: 1;
+  transform: translateY(0);
+}
